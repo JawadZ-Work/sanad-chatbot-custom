@@ -25,11 +25,18 @@
   position: absolute;
   right: 24px;
   bottom: 20px;
+  background: linear-gradient(135deg, #AA70F3 0%, #FD349C 51.04%, #dd8ddd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .questionInputSendButton {
   width: 24px;
   height: 23px;
+  background: none;
+  color: transparent;
 }
 
 .questionInputSendButtonDisabled {
@@ -46,7 +53,7 @@
   height: 4px;
   left: 0%;
   bottom: 0%;
-  background: radial-gradient(106.04% 106.06% at 100.1% 90.19%, #0f6cbd 33.63%, #8dddd8 100%);
+  background: linear-gradient(to right, #AA70F3 33.63%, #FD349C 100%);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -89,8 +96,4 @@
 .fileIcon {
   font-size: 20px;
   color: #424242;
-}
-
-.uploadedImage {
-  margin-right: 70px;
 }

@@ -23,12 +23,14 @@
 
 .headerTitle {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  display: flex;
-  align-items: flex-end;
-  color: #242424;
+  display: inline-block;
+  background: -webkit-linear-gradient(right, #FD349C, #AA70F3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .headerIcon {

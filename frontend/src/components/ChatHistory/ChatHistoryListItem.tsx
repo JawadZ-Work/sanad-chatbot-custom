@@ -256,6 +256,11 @@ export const ChatHistoryListItemCell: React.FC<ChatHistoryListItemCellProps> = (
                   title="Delete"
                   onClick={toggleDeleteDialog}
                   onKeyDown={e => (e.key === ' ' ? toggleDeleteDialog() : null)}
+                  styles={{
+                    icon: {
+                      color: '#FD349C',
+                    },
+                  }}
                 />
                 <IconButton
                   className={styles.itemButton}
@@ -263,6 +268,11 @@ export const ChatHistoryListItemCell: React.FC<ChatHistoryListItemCellProps> = (
                   title="Edit"
                   onClick={onEdit}
                   onKeyDown={e => (e.key === ' ' ? onEdit() : null)}
+                  styles={{
+                    icon: {
+                      color: '#FD349C',
+                    },
+                  }}
                 />
               </Stack>
             )}

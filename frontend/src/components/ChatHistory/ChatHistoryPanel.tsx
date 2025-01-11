@@ -126,7 +126,12 @@ export function ChatHistoryPanel(_props: ChatHistoryPanelProps) {
               title={'Clear all chat history'}
               onClick={onShowContextualMenu}
               aria-label={'clear all chat history'}
-              styles={commandBarStyle}
+              styles={{
+                ...commandBarStyle,
+                icon: {
+                  color: '#FD349C', // Set the icon color here
+                },
+              }}
               role="button"
               id="moreButton"
             />
@@ -142,7 +147,12 @@ export function ChatHistoryPanel(_props: ChatHistoryPanelProps) {
               title={'Hide'}
               onClick={handleHistoryClick}
               aria-label={'hide button'}
-              styles={commandBarStyle}
+              styles={{
+                ...commandBarStyle,
+                icon: {
+                  color: '#FD349C', // Set the icon color here
+                },
+              }}
               role="button"
             />
           </Stack>
